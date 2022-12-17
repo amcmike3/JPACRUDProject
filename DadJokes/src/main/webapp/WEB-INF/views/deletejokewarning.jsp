@@ -61,10 +61,10 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="card border-warning text-center">
+					<div class="card border-warning text-center bg-warning ">
 						<div class="card-body">
-							<p>Something wrong with this joke?</p>
-							<a href="update.do?jokeId=${joke.id }">Click me to Fix me</a>
+							<p>How about we fix it instead?</p>
+							<a class="text-danger" href="update.do?jokeId=${joke.id }">Click me to Fix me</a>
 
 						</div>
 					</div>

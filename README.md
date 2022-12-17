@@ -8,6 +8,7 @@ This application allows a user to perform basic Create, Read, Update, Delete (CR
 <li>Java 8</li>
 <li>Spring</li>
 <li>SpringBoot</li>
+<li>BootStrap</li>
 <li>JPA</li>
 <li>Gradle</li>
 <li>HTML & CSS</li>
@@ -40,4 +41,4 @@ In order to download and utilize this website it is assumed you have the technol
 
 - the delete button will first make a user search for the joke they want to delete. at which point all the information is displayed with a warning message and two links one which will route the user to the home page and another which will attempt to delete the data. if successful a success message is displayed otherwise a failure message is displayed.
 
-- lastly the show all button will retrieve all jokes from the database and display it in a random order. 
+- lastly the show all button will retrieve all jokes from the database and display it in a random order.
