@@ -14,7 +14,7 @@ This application allows a user to perform basic Create, Read, Update, Delete (CR
 <li>HTML & CSS</li>
 <li>MYSQL Database</li>
 <li>MYSQL WorkBench</li>
-<li>Tomcat Server<li>
+<li>Tomcat Server</li>
 <li>CRUD: Create, Read, Update, Delete</li>
 <li>JSP Files</li>
 <li>Servlet Page</li>
@@ -29,7 +29,7 @@ This project was extremely beneficial to expand my understanding, comprehension,
 ## How to utilize solution:
 In order to download and utilize this website it is assumed you have the technologies above installed on the machine you plan to deploy to. first within the DB folder there is a dadjokedb.mwb file that will create and populate a dadjokedb for you otherwise there is a joke.csv file with over 1,000 jokes or a giantjokefile.csv.zip with over 231,000 jokes that you can populate the data on any database of your choice. Assuming that your Tomcat server is already installed it should be as simple as downloading the files and running the solution.
 
-##Control Flow
+## Control Flow
 - On every page the user is presented with 6 buttons the home button, create, read, update, delete, and show all.
 - From the home page 21 random jokes are displayed with the option to look up any joke by id. Each joke displayed is a link that will bring the user to a page that displays all the information about the joke including its several ratings which are displayed as progress bars. Several other pages ultimately end up on this page. It is displayed after creation, reading, or updating of any joke.
 
