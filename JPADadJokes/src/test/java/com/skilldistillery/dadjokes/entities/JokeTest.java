@@ -45,7 +45,7 @@ class JokeTest {
 	void test_Joke_entity_basic_mapping_tests() {
 		assertNotNull(joke);
 		assertEquals("what do you call an angry carrot?", joke.getSetUp());
-		assertEquals("A steamed veggie", joke.getPunchLine());
+		assertEquals("a steamed veggie", joke.getPunchLine());
 
 	}
 }

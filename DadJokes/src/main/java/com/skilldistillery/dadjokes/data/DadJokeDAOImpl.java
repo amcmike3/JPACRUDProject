@@ -34,6 +34,7 @@ public class DadJokeDAOImpl implements DadJokeDAO {
 	@Override
 	public Joke create(Joke joke) {
 
+		System.out.println(joke);
 		em.persist(joke);
 		
 		return joke;
@@ -41,14 +42,34 @@ public class DadJokeDAOImpl implements DadJokeDAO {
 
 	@Override
 	public Joke update(int id, Joke joke) {
-		// TODO Auto-generated method stub
-		return null;
+		Joke managedJoke = em.find(Joke.class, id);
+
+		managedJoke.setEmbarassLevel(joke.getEmbarassLevel());
+		managedJoke.setGroanLevel(joke.getGroanLevel());
+		managedJoke.setImgUrl(joke.getImgUrl());
+		managedJoke.setLaughLevel(joke.getLaughLevel());
+		managedJoke.setPunchLine(joke.getPunchLine());
+		managedJoke.setSetUp(joke.getSetUp());
+		
+		return joke;
 	}
 
 	@Override
 	public boolean delete(int id) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		boolean ans = false;
+		try {
+		Joke joke = em.find(Joke.class, id);
+		if (joke != null) {
+				em.remove(joke);
+				ans = !em.contains(joke);
+
+			}
+		} catch (Exception e) {
+
+		}
+
+		return ans;
 	}
 
 }
