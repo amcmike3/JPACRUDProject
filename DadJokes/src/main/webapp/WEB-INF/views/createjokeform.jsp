@@ -30,19 +30,19 @@
 					<div class="card-body secondary"></div>
 					<form action="created.do">
 						<h6>Set Up</h6>
-						<input type="text" name="setUp" value="First set them up">
+						<input type="text" name="setUp" placeholder="First set them up">
 						<br/>
 						<h6>Punch Line</h6>
-						<input type="text" name="punchLine" value="Then Knock em down">
+						<input type="text" name="punchLine" placeholder="Then Knock em down">
 						<br/>
 						<h6>1-10 how bad would this embarrass a child</h6>
-						<input type="number" max="10" min="1" name="embarassLevel">
+						<input type="number" max="10" min="1" name="embarassLevel" value="1">
 						<br/>
 						<h6>1-10 how hard did this make you laugh</h6>
-						<input type="number" max="10" min="1" name="laughLevel"> 
+						<input type="number" max="10" min="1" name="laughLevel" value="1"> 
 						<br/>
 						<h6>1-10 how bad would a hater groan if they heard this</h6>
-						<input type="number" max="10" min="1" name="groanLevel"> 
+						<input type="number" max="10" min="1" name="groanLevel" value="1"> 
 						<br/> 
 						<h6>Paste optional image url below:</h6>
 						<input	type="text" name="imgUrl">

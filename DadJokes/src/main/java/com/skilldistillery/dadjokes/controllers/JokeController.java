@@ -39,8 +39,18 @@ public class JokeController {
 		mv.addObject("jokes", jokeList);
 		mv.setViewName("views/home");
 		return mv;
+		
 	}
-	
+	@RequestMapping(path= {"all.do"})
+	public ModelAndView showAllPage() {
+		ModelAndView mv = new ModelAndView();
+		
+		List<Joke> jokes = dao.findAll();
+		
+		mv.addObject("jokes", jokes);
+		mv.setViewName("views/showall");
+		return mv;
+	}
 	@RequestMapping("getJoke.do")
 	public ModelAndView jokePage(int jokeId) {
 		ModelAndView mv = new ModelAndView();
@@ -108,7 +118,6 @@ public class JokeController {
 	@RequestMapping("updated.do")
 	public ModelAndView updateJoke(Joke joke) {
 		ModelAndView mv = new ModelAndView();
-		System.out.println(joke);
 		mv.addObject("joke", dao.update(joke.getId(), joke));
 		mv.setViewName("views/onejoke");
 		return mv;

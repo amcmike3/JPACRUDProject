@@ -39,15 +39,14 @@
 	<c:forEach var="joke" items="${jokes }">
 		<div class="container">
 			<div class="row">
-				<c:forEach var="subJoke" items="${joke }" varStatus="loop">
 					<div class="col">
-						<div class="card text-center bg-secondary ">
+						<div class="card text-center">
 							<div class="card-body">
-								<a class="text-white" href="getJoke.do?jokeId=${subJoke.id }">${subJoke.setUp }</a>
+							<p>Id: ${joke.id }</p>
+								<a href="getJoke.do?jokeId=${joke.id }">${joke.setUp }</a>
 							</div>
 						</div>
 					</div>
-				</c:forEach>
 				<br/>
 			</div>
 		</div>
