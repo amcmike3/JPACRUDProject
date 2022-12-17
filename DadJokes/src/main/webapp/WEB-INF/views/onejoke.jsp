@@ -14,14 +14,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<div class="card border-danger text-center">
+				<div class="card border-danger text-center bg-info">
 					<div class="card-header text-primary">
 						<h8>Joke ID: ${joke.id }</h8>
 						<div class="card-title text-primary">
 							<h3>${joke.setUp }</h3>
 						</div>
 					</div>
-					<div class="card-body text-info">
+					<div class="card-body text-black">
 						
 						<h2>${joke.punchLine }</h2>
 						<br />

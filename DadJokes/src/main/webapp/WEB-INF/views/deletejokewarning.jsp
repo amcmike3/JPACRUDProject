@@ -11,25 +11,59 @@
 <body>
 	<%@include file="navbar.jsp"%>
 
+
+
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<div class="card text-center">
-					<div class="card-body">
-						<h1 > Warning!</h1>
+				<div class="card border-danger text-center bg-light">
+					<div class="card-header ">
+						<div class="card-title text-danger">
+						<h1>Warning!!</h1>
+						<br>
 						<h2>Are you sure you want to delete this joke?</h2>
-						<h2>${joke.setUp }</h2>
+						</div>
+					</div>
+					<div class="card-body text-danger">
+						
+						<h8>Joke ID: ${joke.id }</h8>
+							<h3>${joke.setUp }</h3>
 						<h2>${joke.punchLine }</h2>
-						<p> It has an embarassment level of: ${joke.embarassLevel }</p>
-						<p>It has an groan level of: ${joke.groanLevel }</p>
-						<p>It has an laugh level of: ${joke.laughLevel }</p>
-						<a href="delete.do?jokeId=${joke.id }">YES</a>.............<a href="/">	NO</a>
+						<br />
+						<p>Laugh Level:</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped" role="progressbar"
+								aria-label="Default striped example"
+								style="width: ${joke.laughLevel * 10 }%"
+								aria-valuenow="${joke.laughLevel * 10 }" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+						<br />
+						<p>Embarrassment Level:</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped bg-info"
+								role="progressbar" aria-label="Info striped example"
+								style="width: ${joke.embarassLevel * 10 }%"
+								aria-valuenow="${joke.embarassLevel * 10 }" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+						<br />
+						<p>Groan Level:</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped bg-warning"
+								role="progressbar" aria-label="Warning striped example"
+								style="width: ${joke.groanLevel * 10 }%"
+								aria-valuenow="${joke.groanLevel * 10 }" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+						<a href="delete.do?jokeId=${joke.id }" >YES</a>..................<a
+							href="/" > NO</a>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card text-center">
+					<div class="card border-warning text-center">
 						<div class="card-body">
-							<p>Maybe something is just wrong with this joke... lets fix it instead</p>
+							<p>Something wrong with this joke?</p>
 							<a href="update.do?jokeId=${joke.id }">Click me to Fix me</a>
 
 						</div>

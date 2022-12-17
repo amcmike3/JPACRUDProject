@@ -13,7 +13,7 @@
 	<div class="container">
 		<div class="row">
 				<div class="col">
-					<div class="card text-center">
+					<div class="card text-center bg-primary">
 						<div class="card-body">
 							<h1>Home Page!</h1>
 						</div>

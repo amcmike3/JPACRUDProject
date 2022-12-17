@@ -14,8 +14,8 @@
 		<div class="row">
 				<div class="col">
 					<div class="card text-center">
-						<div class="card-body">
-							<h1>Home Page!</h1>
+						<div class="card-body bg-primary">
+							<h1>Lets give em everything we've got!</h1>
 						</div>
 					</div>
 				</div>
