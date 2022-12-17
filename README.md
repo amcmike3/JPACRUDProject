@@ -1,7 +1,7 @@
 # JPA C.R.U.D. Project
 
 ### Description:
-This application allows a user to perform basic Create, Read, Update, Delete (CRUD) operations on a joke from a SQL database.
+This application allows a user to perform basic Create, Read, Update, Delete (CRUD) operations on a P.O.J.O. entity from a SQL database.
 
 ### Technologies Used:
 <ul>
@@ -27,7 +27,7 @@ This application allows a user to perform basic Create, Read, Update, Delete (CR
 This project was extremely beneficial to expand my understanding, comprehension, and implementation of the technologies listed above. I had a lot of fun creating the user experience for this application. The key to success was upfront planning and organization. With all of the moving parts and so many files, it is easy to get off track, add logic in the wrong spot, or miss an important detail. With so many different functionalities that I wanted to implement it was important that I break the big tasks into little ones focusing only on a single method or JSP page and trusting that I will be able to pick up a page or method I have not seen in sometime and be able to interpret and interact with it later.
 
 ## How to utilize solution:
-In order to download and utilize this website it is assumed you have the technologies above installed on the machine you plan to deploy to. first within the DB folder there is a dadjokedb.mwb file that will create and populate a dadjokedb for you otherwise there is a joke.csv file with over 1,000 jokes that you can populate the data on any database of your choice. Assuming that your Tomcat server is already installed it should be as simple as downloading the files and running the solution.
+In order to download and utilize this website it is assumed you have the technologies above installed on the machine you plan to deploy to. first within the DB folder there is a dadjokedb.mwb file that will create and populate a dadjokedb for you otherwise there is a joke.csv file with over 1,000 jokes or a giantjokefile.csv.zip with over 231,000 jokes that you can populate the data on any database of your choice. Assuming that your Tomcat server is already installed it should be as simple as downloading the files and running the solution.
 
 ##Control Flow
 - On every page the user is presented with 6 buttons the home button, create, read, update, delete, and show all.

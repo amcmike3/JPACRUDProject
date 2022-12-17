@@ -52,6 +52,7 @@ public class JokeController {
 		mv.setViewName("views/showall");
 		return mv;
 	}
+	
 	@RequestMapping("getJoke.do")
 	public ModelAndView jokePage(int jokeId) {
 		ModelAndView mv = new ModelAndView();
@@ -60,6 +61,16 @@ public class JokeController {
 		mv.setViewName("views/onejoke");
 		return mv;
 	}
+	
+	@RequestMapping("oneMore.do")
+	public ModelAndView jokePage() {
+		ModelAndView mv = new ModelAndView();
+		int num = (int) (Math.random() * dao.findAll().size() - 1);
+		mv.addObject("joke", dao.findByID(num));
+		mv.setViewName("views/onejoke");
+		return mv;
+	}
+	
 	@RequestMapping("getDeleteWarning.do")
 	public ModelAndView senfToDeleteWarningPage(int jokeId) {
 		ModelAndView mv = new ModelAndView();

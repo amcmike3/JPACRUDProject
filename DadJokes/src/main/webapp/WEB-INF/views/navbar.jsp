@@ -14,9 +14,11 @@
 		<li class="nav-item bg-light"><a class="nav-link active"
 			aria-current="page" href="find.do">Update</a></li>\
 			<li></li>
-		<li class="nav-item disabled bg-light"><a class="nav-link active"
+		<li class="nav-item bg-light"><a class="nav-link active"
 			aria-current="page" href="getDeleteJoke.do">Delete</a></li>\
-		<li class="nav-item disabled bg-light"><a class="nav-link active"
+		<li class="nav-item bg-light"><a class="nav-link active"
 			aria-current="page" href="all.do">Show All</a></li>\
+		<li class="nav-item bg-light"><a class="nav-link active"
+			aria-current="page" href="oneMore.do">Random Joke</a></li>\
 	</ul>
 </nav>

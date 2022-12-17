@@ -22,7 +22,7 @@
 						</div>
 					</div>
 					<div class="card-body text-black">
-						
+
 						<h2>${joke.punchLine }</h2>
 						<br />
 						<p>Laugh Level:</p>
@@ -53,17 +53,30 @@
 						</div>
 					</div>
 				</div>
+			<div class="col">
+				<div class="card border-danger text-center bg-info">
+					<div class="card-header text-primary">
+					<img alt="Hilarious img here" src="${joke.imgUrl }">
+					</div>
+				</div>
+		</div>
 				<div class="col">
 					<div class="card border-warning text-center bg-secondary">
 						<div class="card-body">
-							<p>Something wrong with this joke?</p>
-							<a class="text-danger" href="update.do?jokeId=${joke.id }" >Click me to Fix me</a>
+						
+							<a class="text-primary h3 bg-info" href="oneMore.do">Tell me another!</a>
+							<p class="h3">Something wrong with this joke?</p>
+							<a class="text-danger h3 bg-info" href="update.do?jokeId=${joke.id }">Click
+								me to Fix me</a>
 
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
+	</div>
+
 	</div>
 
 	<%@include file="footer.jsp"%>
