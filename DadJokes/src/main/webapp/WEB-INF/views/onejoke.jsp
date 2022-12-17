@@ -36,7 +36,7 @@
 						<br />
 						<p>Embarrassment Level:</p>
 						<div class="progress">
-							<div class="progress-bar progress-bar-striped bg-info"
+							<div class="progress-bar progress-bar-striped bg-success"
 								role="progressbar" aria-label="Info striped example"
 								style="width: ${joke.embarassLevel * 10 }%"
 								aria-valuenow="${joke.embarassLevel * 10 }" aria-valuemin="0"
@@ -54,10 +54,10 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="card border-warning text-center">
+					<div class="card border-warning text-center bg-secondary">
 						<div class="card-body">
 							<p>Something wrong with this joke?</p>
-							<a href="update.do?jokeId=${joke.id }">Click me to Fix me</a>
+							<a class="text-danger" href="update.do?jokeId=${joke.id }" >Click me to Fix me</a>
 
 						</div>
 					</div>

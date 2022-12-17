@@ -13,20 +13,21 @@
 <div class="container text-center">
 	<div class="row">
 		<div class="col align-self-start">
-			<div class="card card-body">
+			<div class="card card-body bg-info">
 				<p>When the electrician finished fixing the lights I told him
 						he really brightened my day.</p>
 			</div>
 		</div>
 		<div class="col align-self-center">
 		<br/>
-			<div class="card card-body">
+			<div class="card card-body bg-info">
 			<p>And right now you're brightening it too.</p>
 		</div>
 		</div>
 		<br/>
+		<br/>
 		<div class="col align-self-end">
-			<div class="card card-body">
+			<div class="card card-body bg-info">
 				<p>keep it clean... butt funny</p>
 			</div>
 		</div>
@@ -39,8 +40,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<div class="card text-center">
-					<div class="card-body secondary text-info"></div>
+				<div class="card text-center bg-secondary  text-info">
+					<div class="card-body bg-secondary "></div>
 					<form action="updated.do">
 						<div class="form-group">
 							<label for="id"> Joke ID Number</label> <input type="text"

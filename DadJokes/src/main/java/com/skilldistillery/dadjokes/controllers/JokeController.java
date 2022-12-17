@@ -1,6 +1,7 @@
 package com.skilldistillery.dadjokes.controllers;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +47,7 @@ public class JokeController {
 		ModelAndView mv = new ModelAndView();
 		
 		List<Joke> jokes = dao.findAll();
-		
+		Collections.shuffle(jokes);
 		mv.addObject("jokes", jokes);
 		mv.setViewName("views/showall");
 		return mv;

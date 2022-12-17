@@ -40,10 +40,10 @@
 		<div class="container">
 			<div class="row">
 					<div class="col">
-						<div class="card text-center">
+						<div class="card text-center bg-secondary">
 							<div class="card-body">
 							<p>Id: ${joke.id }</p>
-								<a href="getJoke.do?jokeId=${joke.id }">${joke.setUp }</a>
+								<a class="text-white" href="getJoke.do?jokeId=${joke.id }">${joke.setUp }</a>
 							</div>
 						</div>
 					</div>
