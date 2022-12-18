@@ -48,9 +48,9 @@
 						</div>
 					</div>
 				</c:forEach>
-				<br/>
 			</div>
 		</div>
+		<br/>
 	</c:forEach>
 	<%@include file="footer.jsp" %>
 </body>

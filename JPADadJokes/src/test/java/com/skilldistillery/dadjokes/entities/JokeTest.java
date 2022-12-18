@@ -46,6 +46,10 @@ class JokeTest {
 		assertNotNull(joke);
 		assertEquals("what do you call an angry carrot?", joke.getSetUp());
 		assertEquals("a steamed veggie", joke.getPunchLine());
+		assertEquals(7, joke.getEmbarassLevel());
+		assertEquals(4, joke.getGroanLevel());
+		assertEquals(4, joke.getLaughLevel());
+		
 
 	}
 }

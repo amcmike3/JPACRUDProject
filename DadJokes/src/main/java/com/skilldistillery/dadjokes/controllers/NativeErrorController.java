@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class MyErrorController implements ErrorController {
+public class NativeErrorController implements ErrorController {
 
 	@RequestMapping("/error")
 	public String handleError(HttpServletRequest req) {
@@ -19,9 +19,9 @@ public class MyErrorController implements ErrorController {
 			
 			if (statusCode == HttpStatus.NOT_FOUND.value()) {
 
-				return "views/error404";
+				return "error404";
 			}
 		}
-		return "views/error";
+		return "error";
 	}
 }
