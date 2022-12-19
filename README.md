@@ -1,4 +1,5 @@
 # JPA C.R.U.D. Project
+This project is deployed into the Amazon cloud at this link: http://54.201.168.70:8080/DadJokes/
 
 ### Description:
 This application allows a user to perform basic Create, Read, Update, Delete (CRUD) operations on a P.O.J.O. entity from a SQL database.
