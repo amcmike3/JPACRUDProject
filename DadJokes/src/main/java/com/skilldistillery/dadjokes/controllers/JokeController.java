@@ -57,7 +57,9 @@ public class JokeController {
 	public ModelAndView jokePage(int jokeId) {
 		ModelAndView mv = new ModelAndView();
 		
-		mv.addObject("joke", dao.findByID(jokeId));
+		Joke joke = dao.findByID(jokeId);
+		mv.addObject("joke", joke);
+		
 		mv.setViewName("onejoke");
 		return mv;
 	}
