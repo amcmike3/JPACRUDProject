@@ -7,6 +7,7 @@ This application allows a user to perform basic Create, Read, Update, Delete (CR
 ### Technologies Used:
 <ul>
 <li>Java 8</li>
+<li>Amazon Cloud Services</li>
 <li>Spring</li>
 <li>SpringBoot</li>
 <li>BootStrap</li>
