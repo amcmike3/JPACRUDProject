@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Dad Jokes for Days</title>
+<title>Just one more joke</title>
 <%@include file="bootstrap.jsp"%>
 </head>
 <body>

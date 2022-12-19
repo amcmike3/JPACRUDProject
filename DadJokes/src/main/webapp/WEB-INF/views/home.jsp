@@ -16,6 +16,10 @@
 					<div class="card text-center bg-primary">
 						<div class="card-body">
 							<h1>Home Page!</h1>
+							<h3 class=" text-danger">Disclaimer:
+							</h3>
+							<p>These jokes are from the internet so there is potential for offensive jokes.</p>
+							<p>No joke on this website reflects a stance or opinion of its creator.</p>
 						</div>
 					</div>
 				</div>
