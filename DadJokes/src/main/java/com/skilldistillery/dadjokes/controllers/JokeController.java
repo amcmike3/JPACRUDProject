@@ -42,7 +42,7 @@ public class JokeController {
 		return mv;
 		
 	}
-	@RequestMapping(path= {"all.do"})
+	@RequestMapping(path= {"all.do", "/DadJokes/all.do"})
 	public ModelAndView showAllPage() {
 		ModelAndView mv = new ModelAndView();
 		
@@ -53,7 +53,7 @@ public class JokeController {
 		return mv;
 	}
 	
-	@RequestMapping("getJoke.do")
+	@RequestMapping(path= {"getJoke.do", "/DadJokes/getJoke.do"})
 	public ModelAndView jokePage(int jokeId) {
 		ModelAndView mv = new ModelAndView();
 		
@@ -62,7 +62,7 @@ public class JokeController {
 		return mv;
 	}
 	
-	@RequestMapping("oneMore.do")
+	@RequestMapping(path={"oneMore.do", "/DadJokes/oneMore.do"})
 	public ModelAndView jokePage() {
 		ModelAndView mv = new ModelAndView();
 		int num = (int) (Math.random() * dao.findAll().size() - 1);
@@ -71,7 +71,7 @@ public class JokeController {
 		return mv;
 	}
 	
-	@RequestMapping("getDeleteWarning.do")
+	@RequestMapping(path={"getDeleteWarning.do", "/DadJokes/getDeleteWarning.do"})
 	public ModelAndView senfToDeleteWarningPage(int jokeId) {
 		ModelAndView mv = new ModelAndView();
 		
@@ -79,13 +79,13 @@ public class JokeController {
 		mv.setViewName("deletejokewarning");
 		return mv;
 	}
-	@RequestMapping("getDeleteJoke.do")
+	@RequestMapping(path={"getDeleteJoke.do", "/DadJokes/getDeleteJoke.do"})
 	public String senfToDeleteJokePage() {
 	
 		return "deletejoke";
 	}
 	
-	@RequestMapping("delete.do")
+	@RequestMapping(path={"delete.do", "/DadJokes/delete.do"})
 	public ModelAndView deleteJoke(int jokeId) {
 		ModelAndView mv = new ModelAndView();
 		
@@ -95,7 +95,7 @@ public class JokeController {
 		return mv;
 	}
 	
-	@RequestMapping("find.do")
+	@RequestMapping(path={"find.do", "/DadJokes/find.do"})
 	public ModelAndView sendToFindJokeByIdPage() {
 		ModelAndView mv = new ModelAndView();
 		
@@ -103,14 +103,14 @@ public class JokeController {
 		return mv;
 	}
 	
-	@RequestMapping("create.do")
+	@RequestMapping(path={"create.do", "/DadJokes/create.do"})
 	public ModelAndView sendToCreateJokePage() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("createjokeform");
 		return mv;
 	}
 	
-	@RequestMapping("created.do")
+	@RequestMapping(path={"created.do", "/DadJokes/created.do"})
 	public ModelAndView createJoke(Joke joke) {
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("joke", dao.create(joke));
@@ -119,7 +119,7 @@ public class JokeController {
 		return mv;
 	}
 	
-	@RequestMapping("update.do")
+	@RequestMapping(path={"update.do", "/DadJokes/update.do"})
 	public ModelAndView sendToUpdateJokePage(int jokeId) {
 		ModelAndView mv = new ModelAndView();
 		mv.addObject(dao.findByID(jokeId));
@@ -127,7 +127,7 @@ public class JokeController {
 		return mv;
 	}
 	
-	@RequestMapping("updated.do")
+	@RequestMapping(path={"updated.do", "/DadJokes/updated.do"})
 	public ModelAndView updateJoke(Joke joke) {
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("joke", dao.update(joke.getId(), joke));
