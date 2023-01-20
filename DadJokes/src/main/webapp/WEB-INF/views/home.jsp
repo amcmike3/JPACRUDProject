@@ -6,7 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Dad Jokes for Days</title>
+
 <%@include file="bootstrap.jsp"%>
+
+
 </head>
 <body>
 	<%@include file="navbar.jsp"%>
@@ -48,8 +51,8 @@
 		<div class="container">
 			<div class="row">
 				<c:forEach var="subJoke" items="${joke }" varStatus="loop">
-					<div class="col">
-						<div class="card text-center bg-success ">
+					<div class="col zoom">
+						<div class="card text-center bg-success">
 							<div class="card-body">
 								<a class="text-white" href="getJoke.do?jokeId=${subJoke.id }">${subJoke.setUp }</a>
 							</div>
