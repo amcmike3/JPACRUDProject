@@ -15,7 +15,7 @@
 		<div class="row">
 			<div class="col">
 				<div class="card text-center">
-					<div class="card-body">
+					<div class="card-body bg-primary">
 						<h1>Find a Joke by ID</h1>
 					</div>
 				</div>

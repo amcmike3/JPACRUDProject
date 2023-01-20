@@ -56,10 +56,13 @@
 								aria-valuenow="${joke.groanLevel * 10 }" aria-valuemin="0"
 								aria-valuemax="100"></div>
 						</div>
-						<a href="delete.do?jokeId=${joke.id }" >YES</a>..................<a
+						<a href="delete.do?jokeId=${joke.id }" style="color: black;">YES</a>..................<a
 							href="/" > NO</a>
+							<hr>
+							
 					</div>
 				</div>
+				<div class="row"><hr style="color: white;"/><br/><hr/></div>
 				<div class="col">
 					<div class="card border-warning text-center bg-warning ">
 						<div class="card-body">
