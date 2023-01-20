@@ -57,7 +57,7 @@
 								aria-valuemax="100"></div>
 						</div>
 						<a href="delete.do?jokeId=${joke.id }" style="color: black;">YES</a>..................<a
-							href="/" > NO</a>
+							href="/" style="color: black;"> NO</a>
 							<hr>
 							
 					</div>
